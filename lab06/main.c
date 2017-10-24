@@ -36,7 +36,7 @@ int readInput(int numbers[])
 {
     //Creating variable to store the choice of place.
     int place;
-    printf("I - Ones place\nX - Tens place\nC - Hundreds place\nM - Thousands place\nEnter intacter for place selection: ");
+    printf("I - Ones place\nX - Tens place\nC - Hundreds place\nM - Thousands place\nEnter character for place selection: ");
     scanf("%c", &place);
     printf("\nEnter 4-digit integer #1: ");
     scanf("%d", &numbers[0]);
