@@ -14,6 +14,7 @@ int main() {
     char bin[12] = "";
 
     place = readInput(numbers);
+
     int i = 0;
     digits[i] = parseDigit(place, numbers[i]);
     i++;
