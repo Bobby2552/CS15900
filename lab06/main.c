@@ -1,11 +1,11 @@
 #include <stdio.h>
-int readInput(int numbers[]);
-int parseDigit(int place, int number);
+char readInput(int numbers[]);
+int parseDigit(char place, int number);
 void convertDigitToBinary(int digit, int startingChar, char bin[]);
 
 int main() {
     //Creating variable to store the choice of place.
-    int place;
+    char place;
     //Creating array for the inputed numbers.
     int numbers[3];
     //Creating an array for the three digits parsed out of the inputed numbers.
@@ -32,10 +32,10 @@ int main() {
     printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\nConcatenated binary number: %s\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\nConversion of concatenated binary: %d\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n", bin, strtol(bin, NULL, 2));
 }
 
-int readInput(int numbers[])
+char readInput(int numbers[])
 {
     //Creating variable to store the choice of place.
-    int place;
+    char place;
     printf("I - Ones place\nX - Tens place\nC - Hundreds place\nM - Thousands place\nEnter character for place selection: ");
     scanf("%c", &place);
     printf("\nEnter 4-digit integer #1: ");
@@ -48,7 +48,7 @@ int readInput(int numbers[])
     return place;
 }
 
-int parseDigit(int place, int number)
+int parseDigit(char place, int number)
 {
     int digit = 0;
     switch(place) {
