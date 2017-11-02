@@ -1,0 +1,9 @@
+var octin, key
+
+var digits = floor(log10(octin)) + 1
+for (var i | 0 -> digits):
+	var digit = (octin / 10^(digits - i - 1)) % 10
+	digit += key
+	if (digit >= 8) digit -= 8
+	key = digit;
+	print(digit)
