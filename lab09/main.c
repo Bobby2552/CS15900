@@ -12,7 +12,8 @@ int octin;
 //Initial number of digits
 int digits;
 
-/* How the program works:
+/*
+ * How the program works:
  * User inputs an octal number.
  * Check if it's a valid number, if not, keep asking until it is.
  * Find number of digits
