@@ -83,7 +83,7 @@ void inputOctin()
         }
     } while (octin < 0 || checkOctal(octin) == 0);
     digits = floor(log10(octin)) + 1;
-	printf("\n");
+    printf("\n");
 }
 
 //This function will move the leftmost digit to the rightmost position.
