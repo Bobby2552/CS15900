@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+
 void inputOctin();
 int checkOctal(int number);
 int moveDigit(int num);
