@@ -93,7 +93,7 @@ void input()
     tok = strtok(dataSet, " ");
     while (tok != NULL)
     {
-        long long num = atoi(tok);
+        long long num = atoll(tok);
         if (num < 0) {
             break;
         }
